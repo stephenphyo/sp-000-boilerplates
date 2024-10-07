@@ -1,21 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.app {
-  --app-header-height: 60px;
-
-  --font-primary: 'sans-serif';
-  --font-size: 14px;
-
-  --color-primary: #FC4000;
-  --color-secondary: cyan;
-  --color-background: #F5F5F5;
-  --color-text-primary: #000000;
-  --color-text-secondary: #000000;
-}
+@import 'styles/global.scss';
 
 .app {
   display: flex;
