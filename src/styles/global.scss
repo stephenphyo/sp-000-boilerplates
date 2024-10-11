@@ -28,3 +28,10 @@
 ::-webkit-scrollbar-thumb:active {
     background: rgba(0, 0, 0, 0.7);
 }
+
+/** Bootstrap Override **/
+.row>* {
+    padding-right: unset !important;
+    padding-left: unset !important;
+    margin: unset !important;
+}
