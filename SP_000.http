@@ -1,0 +1,6 @@
+@SP_000_HostAddress = http://localhost:5012
+
+GET {{SP_000_HostAddress}}/health
+Accept: application/json
+
+###

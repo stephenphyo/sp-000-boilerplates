@@ -1,0 +1,23 @@
+# Development
+dotnet run --environment=Development
+
+# Production
+dotnet run --environment=Production
+
+# Add Migrations & Update Database
+SET ASPNETCORE_ENVIRONMENT=Production
+echo %ASPNETCORE_ENVIRONMENT%
+dotnet ef migrations add <migration_name>
+dotnet ef database update
+
+# Set User Secrets
+dotnet user-secrets set "CertPassword" "ALPHAbetagammatango@123"
+
+# Convert CRT to PFX
+openssl pkcs12 -export -out certificate.pfx -inkey private.key -in certificate.crt
+
+# Configure Self-Signed Certificates
+$cert = New-SelfSignedCertificate -certstorelocation cert:\localmachine\my -dns <domain_name>
+$pwd = ConvertTo-SecureString -String "<password>" -AsPlainText
+$certpath = "cert:\localmachine\my\$($cert.Thumbprint)"
+Export-PfxCertificate -Cert $certpath -FilePath <filepath> -Password $pwd

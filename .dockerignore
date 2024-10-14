@@ -1,0 +1,61 @@
+# Ignore Visual Studio temporary files
+.vs/
+
+# Ignore bin and obj directories
+bin/
+obj/
+
+# Ignore Confidential Files
+.env
+Secrets.txt
+Certificates/
+
+# Ignore Docker related files
+.dockerignore
+Dockerfile
+Dockerfile.dev
+Dockerfile.prod
+
+# Ignore Custom Files
+Commands.txt
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userprefs
+
+# Ignore build-related files
+*.pdb
+*.dll
+*.cache
+*.tmp
+*.log
+*.DS_Store
+
+# Ignore generated files
+*.js.map
+*.min.js
+*.min.css
+*.min.map
+
+# Ignore SQL Server files
+*.mdf
+*.ldf
+
+# Ignore npm-related files
+node_modules/
+npm-debug.log
+
+# Ignore other commonly ignored files
+.git
+.gitignore
+*.zip
+*.rar
+*.7z
+*.gz
+*.tar
+*.tgz
